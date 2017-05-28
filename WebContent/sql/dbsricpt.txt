@@ -1,0 +1,15 @@
+-- 包府磊 技记
+-- drop user  jspid cascade ;
+-- create user jspid identified by jsppw account unlock ;
+-- grant connect, resource to jspid ;
+
+create table members(
+	id varchar2(15) primary key,
+	password varchar2(50),
+	name varchar2(50) 
+); 
+
+insert into members(id, password, name) values('hong', '1234', '全辨悼') ;
+insert into members(id, password, name) values('admin', '1234', '包府磊') ;
+
+commit ;
